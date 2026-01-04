@@ -30,17 +30,72 @@ The Architecture for this project consists of the main Database **RetailDB**. Th
 
 - Dimension Table - Products Details `gold.dim_products`
 
-![Data Architecture](placeholder)
+![Data Architecture](docs/data_architecture.png)
+
+To further simplify each table the various columns inside each table can be split into two main categories
+
+- **Dimensional Value:** Charcter or Numerical value where aggregations are not possible
+- **Measure Values:** Numeric value where aggregations are possible
+
+Each tables should be examined to find important columns belonging to each category
+
+![Dimensions And Measures](docs/dimensions_and_measures.png)
 
 ---
 
-## Analysis 📈
+## Data Analysis 📈
 
-The first part of this project id **Data Analysis**. Exploring and Understanding the data to extract patterns, and futher manupulating it using advance methods form complex results  
-Thus it can be split into two types of analysis
+The first part of this project is **Data Analysis**. Exploring and Understanding the data to extract patterns, and futher manupulating it using advance methods form complex results  
+Thus the entire process is split into two parts
 
-- Exploratory Data Analysis (EDA)
-  - The process of exploring the databse throughly to understand the structure of each table and the nature of each column inside the table. Basic questions regarding
+- **Exploratory Data Analysis (EDA)**
+  
+- **Advanced Analytics**
+
+Each stage is further dived into six parts focusing on a specific action respective to the process
+
+![Data Analysis Diagram](docs/data_analysis_diagram.png)
+
+### Exploratory Data Analysis
+The purpose of doing an initial EDA for this project is to develop an basic understanding about the structure and various relations that make up the tables.  
+
+- **Database Exploration**
+  - Purpose: Explore the structure of the Database. Understand the Tables and thier Schemas, explore all the Columns and its metadata
+  - Script: [`database_exploration`](scripts/database_exploration.sql)
+  - Insights: How the Schema, Tables and Columns inside the Database are structured
+
+- **Dimensions Exploration**
+  - Purpose: Explore the Dimensional values inside the tables. Understand the cardinality of such values for future categorization
+  - Script: [`dimensions_exploration`](scripts/dimensions_exploration.sql)
+  - Insights: All the unique Countries in which the customers belong to, All the different Categories, Subcategories and Products Names
+
+- **Measures Explorations**
+  - Purpose: Explore the Measure values inside the table. Understand the basic aggregations that can be performed on the measures
+  - Script: [`measures_exploration`](scripts/measures_exploration.sql)
+  - Insights: Generated a basic report regarding all the key metrics of the sales (Sales, Orders, Quantity, Price , Products and Customers)
+ 
+- **Date Exploration**
+  - Purpose: Explore the Date range of several important date values.
+  - Script: [`date_exploration`](scripts/date_exploration.sql)
+  - Insights: Extacted the first and last Order Date and the months in between them, Extracted the oldest and youngest customer
+ 
+- **Magnitude Analysis**
+  - Purpose: Understand data dstributions across categories. Group measures by dimensions
+  - Script: [`magnitude_analysis `](scripts/magnitude_analysis.sql)
+  - Insights: Extracted several aggregations by categoreis such as Total Customers by Countries/Gender, Total Produts by Categories
+    
+- **Ranking Analysis**
+  - Purpose: To rank different dimensions according to various measures. Find out the top or bottom performers
+  - Script: [`ranking_analysis`](scripts/ranking_analysis.sql)
+  - Insights: Extracted Top and Bottom performing products and customers, products based on their performance, customers based on their purchase
+
+
+
+
+
+
+
+
 
 
 
