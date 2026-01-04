@@ -22,7 +22,7 @@ The Processes:
 
 ## Data Architecture 📐
 
-The Source data for this project is the Database **RetailDB** which has be constructed as part of the [Data Warehouse Project](placeholder).
+The Source data for this project is the Database **RetailDB** which has be constructed as part of the [Data Warehouse Project](https://github.com/abhijithsnair1111/Retail-Data-Warehouse-Project.git).
 
 The Architecture for this project consists of the main Database **RetailDB**. The main Schema inside the database named **Gold** is made up of one **Fact** table and two **Dimension** tables
 
@@ -187,7 +187,9 @@ The entire project was constructed on top of  certain requirements and by the en
 - **Database:** RetailDB
 - **Processes:** EDA, Advanced Analytics
 
+---
 
+This entire project is Part Two of the **Data Warehouse, Data Analysis and BI Reporting Project** split into [**Data Warehouse Project**](https://github.com/abhijithsnair1111/Retail-Data-Warehouse-Project.git) and **Data Analytics Project** and **PowerBI Reporting Project**
 
 
 
