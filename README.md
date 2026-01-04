@@ -32,6 +32,15 @@ The Architecture for this project consists of the main Database **RetailDB**. Th
 
 ![Data Architecture](placeholder)
 
+---
+
+## Analysis 📈
+
+The first part of this project id **Data Analysis**. Exploring and Understanding the data to extract patterns, and futher manupulating it using advance methods form complex results  
+Thus it can be split into two types of analysis
+
+- Exploratory Data Analysis (EDA)
+  - The process of exploring the databse throughly to understand the structure of each table and the nature of each column inside the table. Basic questions regarding
 
 
 
