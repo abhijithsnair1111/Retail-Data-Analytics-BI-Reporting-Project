@@ -19,3 +19,27 @@ The Processes:
 - **Business Intelligence Report:** Create Visually appealing dashboards based on generated reports
 
 ---
+
+## Data Architecture 📐
+
+The Architecture for this project consists of the main Database **RetailDB**. The main Schema inside the Database **Gold** is made up of one Fact table and two Dimension tables
+
+- Fact Table  - Sales Details `gold.fact_sales`
+  
+- Dimension Table - Customer Details `gold.dim_customers`
+
+- Dimension Table - Products Details `gold.dim_products`
+
+![Data Architecture](placeholder)
+
+
+
+
+
+
+
+
+
+
+
+
