@@ -116,9 +116,6 @@ The purpose of the Advanced Analytics is to understand the data in depth by form
   - All the above analysis are summarized a single report for both the **Customers** and the **Products** to created a detailed report on all the important metrics and calculations
   - Script: [`customer_report`](scripts/customer_report.sql) and [`product_report`](scripts/product_report.sql)
 
-![Customer Report Sample](docs/customer_report_sample.jpg)
-
-![Product_Report_Sample](docs/product_report_sample.jpg)
 
 ---
 
